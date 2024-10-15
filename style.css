@@ -1,18 +1,49 @@
-body{
-    background-color:darkslateblue;
+body {
+    background-color: darkslateblue;
     color: wheat;
     font-family: 'Comic Sans MS';
 }
 
-#startbutton{
+#startbutton {
     font-size: 30px;
     border-radius: 12px;
     transition-duration: 0.4s;
-    font-family: 'Comic Sans MS';
 }
 
-#startbutton:hover{
+.word-column {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+}
+
+.word-button {
+    font-size: 20px;
+    border-radius: 12px;
+    margin: 5px;
+    padding: 10px 20px;
     background-color: wheat;
     color: black;
-    font-family: 'Comic Sans MS';
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.word-button:hover {
+    background-color: lightgray;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    background-color: red;
+    color: white;
+}
+
+#selected-words {
+    color: wheat;
+    margin: 20px;
+    font-size: 20px;
 }

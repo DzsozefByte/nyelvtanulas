@@ -9,13 +9,31 @@
 <body>
 
     <header>
-    <h1><center>Nyelvtanulás</center></h1>
-    <center><button id="startbutton">Start</button></center>
+        <h1><center>Nyelvtanulás</center></h1>
+        <center><button id="startbutton">Start</button></center>
     </header>
 
+    <main id="game" style="display: none;">
+        <div id="selected-words">
+            <p id="selected-hu">Kiválasztott magyar szó: <span id="hu-word"></span></p>
+            <p id="selected-en">Kiválasztitt angol szó: <span id="en-word"></span></p>
+        </div>
+        <div id="word-pairs">
+            <div id="hungarian" class="word-column"></div>
+            <div id="english" class="word-column"></div>
+        </div>
+    </main>
+    
+
+    <main id="game" style="display: none;">
+        <div id="word-pairs">
+            <div id="hungarian" class="word-column"></div>
+            <div id="english" class="word-column"></div>
+        </div>
+    </main>
+
+    <script src="data.js"></script>
 
 
 </body>
-<script src="data.js"></script>
-
 </html>
