@@ -49,10 +49,10 @@ function handleButtonClick(button, lang, index) {
 
     if (lang === 'hu') {
         selectedHuIndex = index;
-        huWordDisplay.textContent = button.textContent;  // Update the selected Hungarian word
+        huWordDisplay.textContent = button.textContent; 
     } else {
         selectedEnIndex = index;
-        enWordDisplay.textContent = button.textContent;  // Update the selected English word
+        enWordDisplay.textContent = button.textContent;  
     }
 
     if (selectedHuIndex !== null && selectedEnIndex !== null) {
@@ -65,8 +65,11 @@ function handleButtonClick(button, lang, index) {
 function checkMatch(huIndex, enIndex) {
     if (words[huIndex].en === words[enIndex].en) {
         // Correct match
-        document.querySelector(`button[data-index='${huIndex}']`).classList.add('correct');
-        document.querySelector(`button[data-index='${enIndex}']`).classList.add('correct');
+        const huButton = document.querySelector(`button[data-index='${huIndex}']`);
+        const enButton = document.querySelector(`button[data-index='${enIndex}']`);
+        
+        huButton.classList.add('correct');
+        enButton.classList.add('correct');
     } else {
         // Incorrect match
         const huButton = document.querySelector(`button[data-index='${huIndex}']`);

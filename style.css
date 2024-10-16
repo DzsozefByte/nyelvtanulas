@@ -11,8 +11,7 @@ body {
 }
 
 .word-column {
-    display: inline-block;
-    vertical-align: top;
+    display: block; 
     margin: 20px;
 }
 
